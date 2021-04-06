@@ -9,21 +9,18 @@ public class TicTacToe {
         for (int i = 1; i < board.length; i++) {
             System.out.println(board[i]);
         }
+        showBoard(board);
         return board;
+        }
 
-    }
+
     //showing the board
-    public static char[] showBoard(){
-        char[] board = new char[10];
-        int i=0;
-        
+    public static void showBoard(char[] board){
+
         System.out.println("| "+board[1]+"  |"+board[2]+"  |"+board[3]+"  |");
         System.out.println("| "+board[4]+"  |"+board[5]+"  |"+board[6]+"  |");
         System.out.println("| "+board[7]+"  |"+board[8]+"  |"+board[9]+"  |");
-
-        return board;
-
-    }
+            }
 
     //providing playing options
     public static void chooseOption() {
@@ -44,7 +41,8 @@ public class TicTacToe {
     {
         createBoard();
         chooseOption();
-        showBoard();
+
     }
 
 }
+
