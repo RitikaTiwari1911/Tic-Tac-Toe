@@ -12,6 +12,18 @@ public class TicTacToe {
         return board;
 
     }
+    //showing the board
+    public static char[] showBoard(){
+        char[] board = new char[10];
+        int i=0;
+        
+        System.out.println("| "+board[1]+"  |"+board[2]+"  |"+board[3]+"  |");
+        System.out.println("| "+board[4]+"  |"+board[5]+"  |"+board[6]+"  |");
+        System.out.println("| "+board[7]+"  |"+board[8]+"  |"+board[9]+"  |");
+
+        return board;
+
+    }
 
     //providing playing options
     public static void chooseOption() {
@@ -19,7 +31,7 @@ public class TicTacToe {
         System.out.print("Select X or O:");
         String userChoice=input.next();
         System.out.println("User choice:"+userChoice);
-        
+
         if (userChoice.equalsIgnoreCase("x"))
             System.out.println("Computer choice:O");
         else if (userChoice.equalsIgnoreCase("o"))
@@ -32,6 +44,7 @@ public class TicTacToe {
     {
         createBoard();
         chooseOption();
+        showBoard();
     }
 
 }
